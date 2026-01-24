@@ -4,9 +4,7 @@
   "onCreateCommand": ".devcontainer/setup.sh",
   "updateContentCommand": "cargo build",
   "postCreateCommand": "",
-  "postAttachCommand": {
-    "server": "rustlings watch"
-  },
+  "postAttachCommand": "source $HOME/.cargo/env && rustlings watch",
   "customizations": {
     "vscode": {
       "extensions": [
